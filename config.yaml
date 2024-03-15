@@ -1,4 +1,4 @@
-baseURL: https://filipk.dosilovic.com/blog/
+baseURL: "http://filipk.dosilovic.com/blog/"
 languageCode: en-us
 title: Blog
 theme: mini
