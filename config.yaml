@@ -1,7 +1,7 @@
 baseURL: https://fkdosilovic.github.io
 languageCode: en-us
 title: Blog
-theme: github.com/nodejh/hugo-theme-mini
+theme: themes/mini
 paginate: 5
 
 hasCJKLanguage: true
