@@ -1,0 +1,31 @@
+baseURL: https://fkdosilovic.github.io
+languageCode: en-us
+title: Blog
+theme: github.com/nodejh/hugo-theme-mini
+paginate: 5
+
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+# googleAnalytics: UA-123-45
+disqusShortname: fkdosilovic
+
+
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+
+
+social:
+  github: https://github.com/fkdosilovic
+
+
+params:
+  author: fkdosilovic
+  bio: NLP Engineer
+  description: Personal Blog
+  enableRSS: true
+  enableComments: true
+  enableGoogleAnalytics: true
