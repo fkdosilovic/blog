@@ -19,10 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Finding Intuition
-email: your-email@example.com
+# email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My thoughts about programming, machine learning, AI, Python, and software
-  in general.
+  Small corner of the Internet where I share my thoughts about programming,
+  machine learning, AI, and Python.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://filipk.dosilovic.com/blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fkdosilovic
