@@ -54,14 +54,14 @@ markup:
 
 menu:
   main:
-    - name: About
-      pageRef: /about
-      weight: 1
     - name: Posts
       pageRef: /post
-      weight: 2
+      weight: 1
     - name: Tags
       pageRef: /tags
+      weight: 2
+    - name: About
+      pageRef: /about
       weight: 3
     - name: CV
       pageRef: /cv
