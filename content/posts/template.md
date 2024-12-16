@@ -1,5 +1,5 @@
 ---
-title: "Draft Title"
+title: "Template Article Title"
 draft: true
 date: "2019-03-11"
 description: "Template article for other articles."

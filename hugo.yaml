@@ -55,7 +55,7 @@ markup:
 menu:
   main:
     - name: Posts
-      pageRef: /post
+      pageRef: /posts
       weight: 1
     - name: Tags
       pageRef: /tags
