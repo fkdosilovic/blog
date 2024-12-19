@@ -2,10 +2,18 @@
 title: "Setup a blog with Hugo (Flex theme), Github Actions and Pages"
 draft: true
 date: "2024-12-15"
-description: "How to setup a blog with Hugo and Hugo Flex theme and GitHub Actions."
+description: "How to setup a blog with Hugo, Hugo Flex theme, and GitHub Actions."
 tags: ["markdown", "css", "html"]
 # categories: ["themes", "syntax"] # at the moment not used in posts
 ---
+
+Contents:
+- how to install hugo locally
+- basic hugo flex theme with github actions
+- changing code highlight theme
+- adding comments
+  - utterances
+  - giscus
 
 My requirements:
 
