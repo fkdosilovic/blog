@@ -6,15 +6,14 @@ tags: ["hugo", "github-actions", "github-pages", "hugo-flex"]
 # categories: ["themes", "syntax"] # at the moment not used in posts
 ---
 
-I wanted to start a blog for some time now.
+I wanted to start a blog for some time now, but couldn't find a setup that would
+meet my requirements.
 
 My requirements for a blog were:
 
 1. Easy deployment via Github Actions and Github Pages,
 2. Simple, content-first theme with support for tags, math, and customizable syntax highlighting, and
 3. Support for comments
-
-Nothing fancy.
 
 After some search I rediscovered Hugo Flex[^1].
 
