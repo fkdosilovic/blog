@@ -1,6 +1,5 @@
 ---
 title: "Setup a blog with Hugo (Flex theme), GitHub Actions, and GitHub Pages"
-draft: true
 date: "2024-12-21"
 description: "How to setup a blog with Hugo, GitHub Actions, and GitHub Pages."
 tags: ["hugo", "github-actions", "github-pages", "hugo-flex"]
