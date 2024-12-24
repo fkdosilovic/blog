@@ -4,6 +4,7 @@ description: "A paragraph or two about me and this blog."
 date: "2024-12-16"
 # aliases = ["about-us", "about-hugo", "contact"]
 author: "Filip Karlo Došilović"
+disableComments: true
 params:
   showdate: false
 ---

@@ -1,5 +1,6 @@
 ---
 title: "CV"
+disableComments: true
 # params:
 #     showdate: false
 ---

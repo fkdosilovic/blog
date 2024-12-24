@@ -212,8 +212,18 @@ for the chosen repo. Once the app is installed, [create a config](https://giscus
 comments. For my own blog, I've chosen the options `Discussion title contains page <title>`,
 `Announcements` type for discussions, loading the comments lazily, and GitHub Light theme.
 
-Copy and paste the generated config to `layouts/partials/comments.html` (you'll
-have to create the file).
+Copy and paste the generated config with the jinja `if` statement to
+`layouts/partials/comments.html` (you'll have to create the file):
+
+```html
+{{ if not .Params.disableComments }}
+<!-- generated config goes here -->
+{{ end }}
+```
+
+The additional jinja if allows you to disable comments for certain pages. You
+just have to add `disableComments: true` to the yaml header of the markdown.
+By default comments are enabled on all pages.
 
 To check that comments are enabled, rerun the server and check the post from
 the previous step (i.e. syntax highlighting). At the end of the post you should
