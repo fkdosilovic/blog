@@ -57,7 +57,7 @@ myblog/
 ├── layouts/
 ├── static/
 ├── themes/
-└── hugo.toml         <-- site configuration
+└── hugo.yaml         <-- site configuration
 ```
 
 We now have a basic template for your blog. Now we'll add the Flex theme[^3].
@@ -174,7 +174,12 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-Commit and push the changes and go to your repository settings to enable GH
+Compared to the original workflow[^4] I:
+
+- explicitly use ubunut-24.04 instead of ubuntu-latest, and
+- I commented out Dart Sass installation.
+
+Commit, push the changes, and go to your repository settings to enable GH
 Pages[^4].
 
 You should now have successfully deployed your blog to the Internet. Excellent.
@@ -191,14 +196,35 @@ command to change the syntax highlight theme for your blog:
 hugo gen chromastyles --style=github > assets/css/syntax.css
 ```
 
+You can check how the syntax highlighting will look like by creating a post with
+a code snippet and run `hugo server --buildDrafts`.
+
 ## Enabling comments
 
-TODO
+To finish preparing our blog, we'll enable **giscus**[^6] as our app for comments.
+Giscus uses GitHub Discussions for enabling comments on your blog so you'll need
+a **public** repo with enabled Discussions. This repo can be either your blog repo,
+if your blog's repo is public, or any other public repo. I'm using a separate
+repo, named _blog-comments_, since my blog repo is private.
 
-<!-- utterances or giscus -->
+To start, [install the giscus app](https://github.com/apps/giscus/installations/select_target)
+for the chosen repo. Once the app is installed, [create a config](https://giscus.app/) for your
+comments. For my own blog, I've chosen the options `Discussion title contains page <title>`,
+`Announcements` type for discussions, loading the comments lazily, and GitHub Light theme.
+
+Copy and paste the generated config to `layouts/partials/comments.html` (you'll
+have to create the file).
+
+To check that comments are enabled, rerun the server and check the post from
+the previous step (i.e. syntax highlighting). At the end of the post you should
+see a comment box.
+
+And with that, you are done. You should have a working blog with continuous
+builds and deployments to GH Pages, customized syntax highlighting, and comments.
 
 [^1]: I already did have a similar setup with Hugo Flex and GH Actions, but I tore it down after a few weeks and completely forgot about it.
 [^2]: I'm using **yaml** as a configuration format. Other available options are **toml** and **json**.
 [^3]: https://github.com/ldeso/hugo-flex
 [^4]: See https://gohugo.io/hosting-and-deployment/hosting-on-github/ for a more detailed tutorial
 [^5]: See https://xyproto.github.io/splash/docs/ for other options.
+[^6]: https://giscus.app/
