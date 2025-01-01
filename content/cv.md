@@ -22,7 +22,7 @@ disableComments: true
 
 .experience-entry {
   display: inline-flex;
-  margin-bottom: 3ch;
+  margin-bottom: 2em;
 }
 
 .experience-entry .entry-date {
@@ -95,6 +95,33 @@ strategy game that surpassed human performance.</li>
 </ul>
 </span>
 </div>
+
+<br />
+<p class="h2">Open-Source Contributions</p>
+
+<!-- <span><strong>Judge0 Python SDK - Core Developer</strong></span> -->
+<div class="experience-entry">
+<span class="entry-date">Sep 2024. – Current</span>
+<span class="entry-description"> <strong>Judge0 Python SDK - Core Developer</strong>
+<ul>
+<li>Developed an <a href="https://github.com/judge0/judge0-python">open-source library</a>
+ that facilitates the integration of Judge0 API into Python (web) applications</li>
+<li>Setup CI/CD with GitHub Actions</li>
+<li>Setup automatic documentation builds via GitHub Actions and deployments to GitHub Pages</li>
+</ul>
+</span>
+</div>
+
+<!-- <div class="experience-entry">
+<span class="entry-date"></span>
+<span class="entry-description"><strong>Other</strong>
+<ul>
+<li>Minor contributions to <a href="https://github.com/scikit-learn/scikit-learn/pulls/fkdosilovic">scikit-learn</a>,
+<a href="https://github.com/UKPLab/sentence-transformers/pulls?q=is%3Apr+author%3Afkdosilovic+is%3Aclosed">sentence-transformers</a>, and <a href="https://github.com/flairNLP/flair/pulls?q=is%3Apr+author%3Afkdosilovic+is%3Aclosed">flair</a>
+</li>
+</ul>
+</span>
+</div> -->
 
 <p class="h2">Publications</p>
 
