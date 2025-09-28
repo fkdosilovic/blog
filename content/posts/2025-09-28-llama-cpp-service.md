@@ -1,6 +1,5 @@
 ---
 title: "How to setup llama.cpp as a systemd service"
-draft: true
 date: "2025-09-28"
 description: "How to setup llama.cpp as a systemd service."
 tags: ["llama.cpp", "local-llm", "llama-swap", "linux"]
